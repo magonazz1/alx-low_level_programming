@@ -5,10 +5,6 @@
  * Return: Always 0
  *
  * @n: first function parameter
- *
- * @l: second function parameter
- *
- * @m: third function parameter
  */
 void print_diagonal(int n)
 {
