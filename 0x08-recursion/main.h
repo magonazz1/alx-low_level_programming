@@ -12,5 +12,7 @@ int wildcmp(char *s1, char *s2);
 int _putchar(char c);
 int find_sqrt(int x1, int root);
 int is_divisible(int x1, int dv);
+int check_palindrome(char *s, int len, int index);
+int find_strlen(char *s);
 
 #endif
