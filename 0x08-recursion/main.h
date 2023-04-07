@@ -14,5 +14,8 @@ int find_sqrt(int x1, int root);
 int is_divisible(int x1, int dv);
 int check_palindrome(char *s, int len, int index);
 int find_strlen(char *s);
+int strlen_no_wilds(char *s);
+void iterate_wild(char **wilds);
+char *postfix_match(char *s, char *postfix);
 
 #endif
