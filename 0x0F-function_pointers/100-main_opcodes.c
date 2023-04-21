@@ -11,9 +11,9 @@
  */
 int main(int argc, char *argv[])
 {
-	unsigned char *ad = (unsigned char *)main;
 	int x = 0;
 	int bytes = atoi(argv[1]);
+	unsigned char *ad = (unsigned char *)&main;
 
 	if (argc != 2)
 	{
@@ -27,7 +27,7 @@ int main(int argc, char *argv[])
 	}
 	for (; x < bytes; x++)
 	{
-		printf("%.2x", *ad);
+		printf("%.2x", *(ad + x));
 
 		if (x != bytes - 1)
 		{
