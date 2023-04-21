@@ -12,28 +12,33 @@
 int main(int argc, char *argv[])
 {
 	int x = 0;
-	int bytes = atoi(argv[1]);
-	unsigned char *ad = (unsigned char *)&main;
+	int bytes;
+	int (*ad)(int, char **) = main;
+	unsigned char code;
 
 	if (argc != 2)
 	{
 		printf("Error\n");
-		return (1);
+		exit(1);
 	}
+	bytes = atoi(argv[1]);
+
 	if (bytes < 0)
 	{
 		printf("Error\n");
-		return (2);
+		exit(2);
 	}
 	for (; x < bytes; x++)
 	{
-		printf("%.2x", *(ad + x));
+		code = *(unsigned char *) ad;
+
+		printf("%.2x", code);
 
 		if (x != bytes - 1)
 		{
 			printf(" ");
+			ad++;
 		}
-		ad++;
 	}
 	printf("\n");
 	return (0);
