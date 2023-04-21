@@ -17,17 +17,18 @@ int main(int argc, char *argv[])
 
 	if (argc != 2)
 	{
-		printf("Usage: %s <number of bytes>\n", argv[0]);
+		printf("Error\n");
 		return (1);
 	}
 	if (bytes < 0)
 	{
-		printf("Error: Invalid number of byes\n");
+		printf("Error\n");
 		return (2);
 	}
 	for (; x < bytes; x++)
 	{
 		printf("%.2x", *ad);
+
 		if (x != bytes - 1)
 		{
 			printf(" ");
