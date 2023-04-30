@@ -12,5 +12,7 @@ int _putchar(char c);
 void simple_print_buffer(char *buffer, unsigned int size);
 void print_grid(int **grid, int width, int height);
 void print_tab(char **tab);
+int count_words(char *str);
+char **allocate_words(char *str, int wordCount);
 
 #endif /* MAIN_H */
