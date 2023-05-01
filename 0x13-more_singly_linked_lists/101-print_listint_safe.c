@@ -18,7 +18,7 @@ size_t looped_listint_len(const listint_t *head)
 	const listint_t *slow, *speedster;
 	size_t node = 1;
 
-	if (head->next == NULL || head == NULL)
+	if ((head == NULL) || (head->next == NULL))
 	{
 		return (0);
 	}
