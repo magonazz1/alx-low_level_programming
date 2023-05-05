@@ -3,7 +3,7 @@
 /**
  * get_endianness - function that checks endiannes of the system
  *
- * @Return: 0 if big endian, 1 if little endian
+ * Return: 0 if big endian, 1 if little endian
  */
 int get_endianness(void)
 {
