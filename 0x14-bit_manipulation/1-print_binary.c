@@ -14,7 +14,7 @@ void print_binary(unsigned long int n)
 	unsigned long int pack = 1;
 	int x = 0;
 
-	for (; x <63; x++)
+	for (; x < 63; x++)
 	{
 		pack <<= 1;
 		if (pack > n)
