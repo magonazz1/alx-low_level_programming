@@ -4,7 +4,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
-
+#include <string.h>
 /**
  * struct slistint_s - doubly linked list
  * @n: integer
