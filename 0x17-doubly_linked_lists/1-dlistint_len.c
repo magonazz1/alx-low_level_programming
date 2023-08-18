@@ -2,7 +2,7 @@
 
 /**
  * dlistint_len - function that ounts the number of elements
- * 			in a linked dlistint_t list.
+ *			in a linked dlistint_t list.
  *
  * @h: head of the dlistint_t list.
  *
