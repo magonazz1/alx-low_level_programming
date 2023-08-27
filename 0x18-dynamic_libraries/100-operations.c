@@ -36,7 +36,7 @@ int mul(int a, int b)
  * @b: parameter 2
  * Return: always 0
  */
-int _div(int a, int b)
+int div(int a, int b)
 {
 	if (b == 0)
 	{
