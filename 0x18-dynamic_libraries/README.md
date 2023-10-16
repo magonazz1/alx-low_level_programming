@@ -40,14 +40,14 @@ In this project, you'll create dynamic libraries in C and explore how they work 
 
 ## Tasks
 
-* 1. **A library is not a luxury but one of the necessities of life:**
+1. **A library is not a luxury but one of the necessities of life:**
    - Create the dynamic library `libdynamic.so` containing various functions.
    - A sample of functions is provided, and you can implement the ones that are missing.
 
-* 2. **Without libraries, what have we? We have no past and no future:**
+2. **Without libraries, what have we? We have no past and no future:**
    - Create a script that generates a dynamic library called `liball.so` from all `.c` files in the current directory.
 
-* 3. **Code injection: Win the Giga Millions!:**
+3. **Code injection: Win the Giga Millions!:**
    - Implement a shell script that, when executed, manipulates the environment using `LD_PRELOAD` and allows you to "win" the Giga Millions jackpot in a simulated scenario.
 
 For more details on each task, check the respective directories in the project repository.
@@ -55,3 +55,7 @@ For more details on each task, check the respective directories in the project r
 ## Usage
 
 Follow the instructions in each task directory to compile and execute the code.
+
+## AUTHOR
+
+* Martin Magonagona <martinmagonazz@outlook.com>
