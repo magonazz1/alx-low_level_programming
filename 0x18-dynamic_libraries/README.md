@@ -58,4 +58,5 @@ Follow the instructions in each task directory to compile and execute the code.
 
 ## AUTHOR
 
-* Martin Magonagona <martinmagonazz@outlook.com>
+* Martin Magonagona
+* Email: <martinmagonazz@outlook.com>
