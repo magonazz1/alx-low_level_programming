@@ -116,6 +116,17 @@ It is strongly encouraged to work together on a set of tests.
 - Write a function that deletes a hash table.
 - Prototype: `void hash_table_delete(hash_table_t *ht);`
 
+### Task 7: Additional Task (Advanced)
+- Implement a Sorted Hash Table in C
+
+- Prototype: shash_table_t *shash_table_create(unsigned long int size);
+- Prototype: int shash_table_set(shash_table_t *ht, const char *key, const char *value);
+- Prototype: char *shash_table_get(const shash_table_t *ht, const char *key);
+- Prototype: void shash_table_print(const shash_table_t *ht);
+- Prototype: void shash_table_print_rev(const shash_table_t *ht);
+- Prototype: void shash_table_delete(shash_table_t *ht);
+- For this advanced task, you will implement a sorted hash table using the provided data structures. The key/value pairs will be sorted in the linked list by key (sorted on ASCII value).
+
 ## Copyright
 
 Copyright © 2023 ALX, All rights reserved.
