@@ -1,0 +1,12 @@
+# Makefile number 2
+
+all: school
+
+CC := gcc
+SRC := main.c school.c
+
+school: $(SRC)
+	$(CC) -o $@ $^
+.PHONY: clean
+clean:
+	rm -f school
