@@ -2,7 +2,7 @@
 
 all: school
 
-school: $(wildcard *.c)
+school: main.c school.c
 	gcc -o $@ $^
 
 .PHONY: clean
