@@ -7,7 +7,7 @@ that returns the perimeter of the island described in grid:
 
 def neighbors(grid, up, down, row_neighbors, col_neighbors):
     """ Return number of sides of the lake """
-    
+
     num_of_sides = 0
 
     """ up """
@@ -26,12 +26,12 @@ def neighbors(grid, up, down, row_neighbors, col_neighbors):
     if down < col_neighbors - 1 and grid[up][down + 1]:
         num_of_sides = num_of_sides + 1
 
-    return(num_of_sides)
+    return num_of_sides
 
 
 def island_perimeter(grid):
     """ Return perimiter of lake of ones inside lake of zeros """
-    
+
     perimeter_count = 0
     row_length = len(grid)
     col_length = len(grid[0])
@@ -42,4 +42,4 @@ def island_perimeter(grid):
                 perimeter_count = perimeter_count
                 + (4 - neighbors(grid, row, col, row_length, col_length))
 
-    return(perimeter_count)
+    return perimeter_count
