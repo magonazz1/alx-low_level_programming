@@ -1,45 +1,28 @@
 #!/usr/bin/python3
-"""
-Creates a function def island_perimeter(grid):
-that returns the perimeter of the island described in grid:
-"""
-
-
-def neighbors(grid, up, down, row_neighbors, col_neighbors):
-    """ Return number of sides of the lake """
-
-    num_of_sides = 0
-
-    """ up """
-    if up > 0 and grid[up - 1][down]:
-        num_of_sides = num_of_sides + 1
-
-    """ down """
-    if up < row_neighbors - 1 and grid[up + 1][down]:
-        num_of_sides = num_of_sides + 1
-
-    """ left """
-    if down > 0 and grid[up][down - 1]:
-        num_of_sides = num_of_sides + 1
-
-    """ right """
-    if down < col_neighbors - 1 and grid[up][down + 1]:
-        num_of_sides = num_of_sides + 1
-
-    return num_of_sides
+"""Defines an island perimeter measuring function."""
 
 
 def island_perimeter(grid):
-    """ Return perimiter of lake of ones inside lake of zeros """
+    """Function that returns the perimiter of an island.
 
-    perimeter_count = 0
-    row_length = len(grid)
-    col_length = len(grid[0])
+    grid represents water by 0 and land by 1.
 
-    for row in range(0, row_length):
-        for col in range(0, col_length):
-            if grid[row][col]:
-                perimeter_count = perimeter_count
-                + (4 - neighbors(grid, row, col, row_length, col_length))
+    Arguments:
+        grid (list): A list of list of integers representing an island.
+    Return:
+        The perimeter of the island defined in grid.
+    """
+    width = len(grid[0])
+    height = len(grid)
+    edges = 0
+    size = 0
 
-    return perimeter_count
+    for i in range(height):
+        for j in range(width):
+            if grid[i][j] == 1:
+                size = size + 1
+                if (j > 0 and grid[i][j - 1] == 1):
+                    edges = edges + 1
+                if (i > 0 and grid[i - 1][j] == 1):
+                    edges = edges + 1
+    return size * 4 - edges * 2
