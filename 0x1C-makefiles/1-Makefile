@@ -1,13 +1,7 @@
 # Makefile number 2
 
-all: school
-
 CC := gcc
-SRC := main.c school.c
+SRC := main.c school.c 
 
-school: $(SRC)
-	$(CC) -o $@ $^
-
-.PHONY: clean
-clean:
-	rm -f school
+all: main.c school.c
+	$(CC) $(SRC) -o school
