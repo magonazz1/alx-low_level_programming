@@ -1,0 +1,22 @@
+# Makefile number 6 (advanced)
+
+CC=gcc
+CFLAGS=$(-Wall -Werror -Wextra -pedantic)
+SRC=main.c school.c
+OBJ=$(SRC:.c=.o)
+NAME=school
+
+.PHONY: all clean oclean fclean re
+
+all: m.h $(OBJ)
+	$(CC) $(SRC) -o $(NAME)
+
+clean:
+	$(RM) $(NAME) *~
+
+oclean:
+	$(RM) $(OBJ)
+
+fclean: clean oclean
+
+re: oclean all
