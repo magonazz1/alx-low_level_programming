@@ -1,7 +1,5 @@
 # Makefile number 3
-
-all: $(NAME)
-
+#
 CC=gcc
 SRC=main.c school.c
 OBJ=$(SRC:.c=.o)
