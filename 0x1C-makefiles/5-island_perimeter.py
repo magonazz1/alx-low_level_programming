@@ -26,20 +26,20 @@ def neighbors(grid, up, down, row_neighbors, col_neighbors):
     if down < col_neighbors - 1 and grid[up][down + 1]:
         num_of_sides = num_of_sides + 1
 
-    return num_of_sides
+    return(num_of_sides)
 
 
 def island_perimeter(grid):
     """ Return perimiter of lake of ones inside lake of zeros """
     
-    perimiter_count = 0
+    perimeter_count = 0
     row_length = len(grid)
     col_length = len(grid[0])
 
     for row in range(0, row_length):
         for col in range(0, col_length):
             if grid[row][col]:
-                perimiter_count = perimiter_count
+                perimeter_count = perimeter_count
                 + (4 - neighbors(grid, row, col, row_length, col_length))
 
-    return perimiter_count
+    return(perimeter_count)
