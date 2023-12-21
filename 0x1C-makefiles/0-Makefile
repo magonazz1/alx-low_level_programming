@@ -1,0 +1,11 @@
+# My first makefile for building 'school' executable
+
+all: school
+
+school: $(wildcard *.c)
+	gcc -o $@ $^
+
+.PHONY: clean
+clean:
+	rm -f school
+
