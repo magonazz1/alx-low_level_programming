@@ -3,10 +3,11 @@
 all: school
 
 CC := gcc
-SRC := $(wildcard *.c)
+SRC := main.c school.c
 
 school: $(SRC)
 	$(CC) -o $@ $^
+
 .PHONY: clean
 clean:
 	rm -f school
