@@ -31,7 +31,7 @@ Repo:
 
 - **GitHub repository**: alx-low_level_programming
 - **Directory**: 0x1C-makefiles
-- **File**: (0-Makefile)[./0-Makefile]
+- **File**: [0-Makefile](./0-Makefile)
    
 ### 1. (1-Makefile)
 
@@ -45,7 +45,7 @@ Repo:
 
 - **GitHub repository**: alx-low_level_programming
 - **Directory**: 0x1C-makefiles
-- **File**: (1-Makefile)[./1-Makefile]
+- **File**: [1-Makefile](./1-Makefile)
    
 ### 2. (2-Makefile)
 
@@ -79,7 +79,7 @@ Repo:
 
 - **GitHub repository**: alx-low_level_programming
 - **Directory**: 0x1C-makefiles
-- **File**: (2-Makefile)[./2-Makefile]
+- **File**: [2-Makefile](./2-Makefile)
    
 ### 3. (3-Makefile)
 
@@ -125,7 +125,7 @@ Repo:
 
 - **GitHub repository**: alx-low_level_programming
 - **Directory**: 0x1C-makefiles
-- **File**: (3-Makefile)[./3-Makefile]
+- **File**: [3-Makefile](./3-Makefile)
    
 ### 4. (4-Makefile)
 
@@ -166,7 +166,7 @@ Repo:
 
 - **GitHub repository**: alx-low_level_programming
 - **Directory**: 0x1C-makefiles
-- **File**: (4-Makefile)[./4-Makefile]
+- **File**: [4-Makefile](./4-Makefile)
    
 ### 5. (5-island_perimeter.py)
 
@@ -191,7 +191,7 @@ Repo:
 
 - **GitHub repository**: alx-low_level_programming
 - **Directory**: 0x1C-makefiles
-- **File**: (5-island_perimeter.py)[./5-island_perimeter.py]
+- **File**: [5-island_perimeter.py](./5-island_perimeter.py)
    
 ### 6. (100-Makefile)
 
@@ -242,7 +242,7 @@ Repo:
 
 - **GitHub repository**: alx-low_level_programming
 - **Directory**: 0x1C-makefiles
-- **File**: (100-Makefile)[./100-Makefile)
+- **File**: [100-Makefile](./100-Makefile)
 
 ## Conclusion
 
