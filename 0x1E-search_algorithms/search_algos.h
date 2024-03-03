@@ -23,7 +23,7 @@ typedef struct listint_s
 	int n;
 	size_t index;
 	struct listint_s *next;
-} listint_s;
+} listint_t;
 
 /**
  * struct skiplist_s - singly linked list with an express lane
